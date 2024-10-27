@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Statistics - Sunrisers Hyderabad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Player Statistics</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="team.html">Team Profile</a>
+            <a href="schedule.html">Match Schedule</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Team Statistics</h2>
+            <div class="stat-toggle">
+                <button onclick="showStats('batting')">Batting Statistics</button>
+                <button onclick="showStats('bowling')">Bowling Statistics</button>
+            </div>
+
+            <!-- Batting Statistics Table -->
+            <div class="stats-table" id="batting-stats">
+                <h3>Batting Statistics</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Matches</th>
+                            <th>Runs</th>
+                            <th>Average</th>
+                            <th>Strike Rate</th>
+                            <th>50s</th>
+                            <th>100s</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Player 1</td>
+                            <td>30</td>
+                            <td>1200</td>
+                            <td>40.0</td>
+                            <td>135.0</td>
+                            <td>10</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Player 2</td>
+                            <td>28</td>
+                            <td>900</td>
+                            <td>32.1</td>
+                            <td>125.3</td>
+                            <td>8</td>
+                            <td>1</td>
+                        </tr>
+                        <!-- Add more players as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Bowling Statistics Table -->
+            <div class="stats-table" id="bowling-stats" style="display: none;">
+                <h3>Bowling Statistics</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Matches</th>
+                            <th>Wickets</th>
+                            <th>Economy</th>
+                            <th>Average</th>
+                            <th>Strike Rate</th>
+                            <th>Best Bowling</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Player 3</td>
+                            <td>30</td>
+                            <td>35</td>
+                            <td>7.5</td>
+                            <td>20.0</td>
+                            <td>24.0</td>
+                            <td>4/20</td>
+                        </tr>
+                        <tr>
+                            <td>Player 4</td>
+                            <td>25</td>
+                            <td>28</td>
+                            <td>8.1</td>
+                            <td>24.5</td>
+                            <td>30.0</td>
+                            <td>3/15</td>
+                        </tr>
+                        <!-- Add more players as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sunrisers Hyderabad Fan Hub</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
